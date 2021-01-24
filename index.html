@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /*hedaer*/
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color:blanchedalmond;
+            }
+            a:visited{
+                color:grey;
+            }
+            body{
+                margin:0px;
+            }
+           
+            ul{
+                margin:0px;
+                padding: 10px;
+            }
+            ul > li{
+                display: inline-block;
+            }
+            
+            .wrap-header-1{
+                background: #333;
+            }
+            .wrap-header-2{
+                background: white;
+            }
+            .header-1{
+                display:flex;
+                margin:auto;
+                height:35px;
+                width: 1200px;
+                align-items: center;
+            }
+            .header-nav1{
+                flex: 9;
+            }
+            .header-nav1 >ul>li{
+                color:white;
+                font-size:13px;
+                margin-right: 7px;
+            }
+            .header-search{
+                display:flex;
+                align-items: center;
+                flex:1;
+            }
+            .search-box{
+                height:25px;
+                width: 230px;
+                background-color: paleturquoise;
+                border-radius: 100px;
+                border: none;
+            }
+            .search-img{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .header-2{
+                display: flex;
+                margin:auto;
+                width:1200px;
+                height: 110px;
+                align-items: center;
+            }
+            .logo{
+                flex:3.7;
+            }
+            .header-nav2{
+                flex:6.3;
+            }
+            .header-nav2 >ul>li{
+                font-size: 18px;
+                margin-right:25px;
+            } 
+            /*main*/
+            
+            main{
+                background: #444;
+                min-height: 700px;
+            }
+
+            /*footer*/
+
+            footer{
+                background: #333;
+                height: 161px;
+            }
+            .f-1{
+                border-bottom: 1px solid #444;
+            }
+            .footer-1{
+                margin:auto;
+                width:1200px;
+                height:60px;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+            }
+            .footer-1> ul{
+                padding-left: 0px;
+            }
+            .footer-1 > ul > li{
+                margin-right:10px;
+            }
+
+            .footer-1 > ul > li:first-child > a{
+                color:white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .footer-2{
+                margin:auto;
+                width:1200px;
+                height:100px;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                color:grey;
+            }
+            .footer-address{
+                flex:7.75;
+            }
+            .footer-search{
+                flex:2.25;
+            }
+            .address{
+                margin-right: 10px;
+            }
+            .COPY{
+                display:flex;
+                margin-top: 4px;
+                font-size: 11px;
+                color: #444;
+            }
+            .footer-search > select{
+                height:40px;
+                width: 200px;
+                border:none;
+                font-size:12px;
+                font-weight: bold;
+                padding:6px;
+            }
+            #footer-submit{
+                height:40px;
+                width:63px;
+                border:none;
+                margin-left:0px;
+                background-color: #C30E2E;
+                color:white;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap-header-1">
+                <div class="header-1">
+                    <div class="header-nav1">
+                        <ul>
+                            <li><a href="">IT서비스</a></li>
+                            <li><a href="">학생</a></li>
+                            <li><a href="">교직원</a></li>
+                            <li><a href="">예비세종인</a></li>
+                            <li><a href="">ENGLISH</a></li>
+                            <li><a href="">CHINESE</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input class="search-box" type="search">
+                        <img class="search-img" src="C:\Users\USER\Desktop\web\img\btn_search.png">
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-header-2">
+                <div class="header-2">
+                    <div class="logo">
+                        <img src="C:\Users\USER\Desktop\web\img\logo.png">
+                    </div>
+                    <div class="header-nav2">
+                        <ul>
+                            <li><a href="">세종소개</a></li>
+                            <li><a href="">입학안내</a></li>
+                            <li><a href="">대학대학원</a></li>
+                            <li><a href="">대학생활</a></li>
+                            <li><a href="">기관안내</a></li>
+                            <li><a href="">정보광장</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            중단
+        </main>
+        <footer>
+            <div class="f-1">
+                <div class="footer-1">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">규정/예결산공고</a></li></li>
+                        <li><a href="">대학정보공시</a></li>
+                        <li><a href="">홈페이지오류신고</a>
+                        <li><a href="">교내전화번호</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-2">
+                <div class="footer-address">
+                    <span class="address">
+                        05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+                    </span>
+                    <span class="TEL">
+                        TEL 02-3408-3114
+                    </span>
+                    <span class="E-MAIL">
+                        webmaster@sejong.ac.kr
+                    </span>
+                    <br><span class="COPY">COPYRIGHT 2012 SEJONG UNIVERSITY. ALL RIGHTS RESVERED.</span>
+                </div>
+                <div class="footer-search">
+                    <select>
+                        <option>관련사이트 바로가기</option>
+                        <option>박물관</option>
+                        <option>학군단</option>
+                        <option>학생생활 상담소</option>
+                        <option>세종사이버대학교</option>
+                        <option>세종초등학교</option>
+                        <option>세종포털</option>
+                    </select>
+                    <input type="submit" value="이동" id="footer-submit">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
