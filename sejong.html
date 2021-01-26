@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            /*hedaer*/
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                color:blanchedalmond;
+            }
+            a:visited{
+                color:grey;
+            }
+            body{
+                margin:0px;
+            }
+           
+            ul{
+                margin:0px;
+                padding: 10px;
+            }
+            ul > li{
+                display: inline-block;
+            }
+            
+            .wrap-header-1{
+                background: #333;
+            }
+            .wrap-header-2{
+                background: white;
+            }
+            .header-1{
+                display:flex;
+                margin:auto;
+                height:35px;
+                width: 1200px;
+                align-items: center;
+            }
+            .header-nav1{
+                flex: 9;
+            }
+            .header-nav1 >ul>li{
+                color:white;
+                font-size:13px;
+                margin-right: 7px;
+            }
+            .header-search{
+                display:flex;
+                align-items: center;
+                flex:1;
+            }
+            .search-box{
+                height:25px;
+                width: 230px;
+                background-color: paleturquoise;
+                border-radius: 100px;
+                border: none;
+            }
+            .search-img{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .header-2{
+                display: flex;
+                margin:auto;
+                width:1200px;
+                height: 110px;
+                align-items: center;
+            }
+            .logo{
+                flex:3.7;
+            }
+            .header-nav2{
+                flex:6.3;
+            }
+            .header-nav2 >ul>li{
+                font-size: 18px;
+                margin-right:25px;
+            } 
+           
+
+            /*footer*/
+
+            footer{
+                background: #333;
+                height: 161px;
+            }
+            .f-1{
+                border-bottom: 1px solid #444;
+            }
+            .footer-1{
+                margin:auto;
+                width:1200px;
+                height:60px;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+            }
+            .footer-1> ul{
+                padding-left: 0px;
+            }
+            .footer-1 > ul > li{
+                margin-right:10px;
+            }
+
+            .footer-1 > ul > li:first-child > a{
+                color:white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .footer-2{
+                margin:auto;
+                width:1200px;
+                height:100px;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                color:grey;
+            }
+            .footer-address{
+                flex:7.75;
+            }
+            .footer-search{
+                flex:2.25;
+            }
+            .address{
+                margin-right: 10px;
+            }
+            .COPY{
+                display:flex;
+                margin-top: 4px;
+                font-size: 11px;
+                color: #444;
+            }
+            .footer-search > select{
+                height:40px;
+                width: 200px;
+                border:none;
+                font-size:12px;
+                font-weight: bold;
+                padding:6px;
+            }
+            #footer-submit{
+                height:40px;
+                width:63px;
+                border:none;
+                margin-left:0px;
+                background-color: #C30E2E;
+                color:white;
+            } 
+            
+            /*main*/
+
+            .main-wrap{
+                background-image: url(./img/sejong-main-img.jpg);
+                background-position: center;
+            }
+
+            .main-1{
+                margin: auto;
+                width:1200px;
+                height: 620px;
+            }
+        
+            .m1-box{
+                display:inline-block;
+                width: 510px;
+                height:235px;
+                background-image: url(./img/sejong-scroll-img.png);
+                margin-left:690px;
+                margin-top: 292px;
+                
+            }
+            .m1-box-tt{
+               line-height: 13px;
+               margin:45px 32px 0px 32px;
+               color:white;
+            }   
+            .border-1px{
+                margin:0px 0px 0px 32px;
+                width:15px;
+                border:1px solid white;
+            }
+            .m1-box-ct{
+                margin:21.440px 32px 0px 32px;
+                font-size:13px;
+                line-height: 19px;
+                color:white;
+                opacity: 0.7;
+            }
+            
+            .m1-box-ct>ul{
+                padding:0px;
+            }
+
+            .m1-bar{
+                display:flex;
+                margin-top: 30px;
+                width:100%;
+                height:63px;
+                background-color:rgba(51, 51, 51, 0.8);
+            }
+
+            .m1-bar>ul{
+                display:flex;
+                flex:4;
+                justify-content: space-around;
+                padding:0px;
+            }
+
+            .m1-bar>ul>li{
+                width:100%;
+                height:100%;
+            }
+
+            .m1-bar>ul>li>button{
+                padding:0px;
+                border:none;
+                background-color:inherit;
+                width:100%;
+                height:100%;
+            }
+
+            .m1-bar>ul>li:first-child{
+                background-color: white;
+            }
+            .m1-bar>ul>li:first-child>button>span{
+                color:black;
+            }
+
+            .m1-bar>ul>li>button>span{
+                font-size:17px;
+                color:white;
+
+            }
+
+            .m1-bar> .more-btn{
+                flex:2;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            #mbtn-img{
+                margin-right: 30px;
+            }
+
+            .main-2{
+                height:370px;
+                background: #f5f5f5;
+            }
+            .m2-container{
+                display:flex;
+                margin:auto;
+                width:1200px;
+                height: 323px;
+                background: white;
+                
+            }
+
+            .m2-container > ul{
+                display:flex;
+                margin-right:18px;
+                width:100%;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .m2-container > ul > li{
+                margin-left:18px;
+            }
+
+            .news{
+                width:260px;
+                height:251px;
+            }
+            .news-img>a>img{
+                width:260px;
+                height:146px;
+            }
+
+            .news-con{
+                margin-top:8px;
+            }
+
+            .news-category{
+                letter-spacing: -0.1em;
+                font-weight: bold;
+                color:#4b7a8c;
+            }
+
+            .news-title{
+                font-style: 'Malgun Gothic';
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-weight: bold;   
+                margin-top: 8px;
+                white-space: nowrap;
+                color:#333333;
+                font-weight: bold;
+                font-size:16px;
+                text-align: left;
+            }
+
+            .news-text{
+                height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-style: 'Malgun Gothic';
+                letter-spacing: -0.1em;
+                font-size: 14px;
+                margin-top: 8px;
+                color:#898989;
+                line-height: 20px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="wrap-header-1">
+                <div class="header-1">
+                    <div class="header-nav1">
+                        <ul>
+                            <li><a href="">IT서비스</a></li>
+                            <li><a href="">학생</a></li>
+                            <li><a href="">교직원</a></li>
+                            <li><a href="">예비세종인</a></li>
+                            <li><a href="">ENGLISH</a></li>
+                            <li><a href="">CHINESE</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-search">
+                        <input class="search-box" type="search">
+                        <a href=""><img class="search-img" src="C:\Users\USER\Desktop\web\img\btn_search.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-header-2">
+                <div class="header-2">
+                    <div class="logo">
+                        <a href=""><img src="C:\Users\USER\Desktop\web\img\logo.png"></a>
+                    </div>
+                    <div class="header-nav2">
+                        <ul>
+                            <li><a href="">세종소개</a></li>
+                            <li><a href="">입학안내</a></li>
+                            <li><a href="">대학대학원</a></li>
+                            <li><a href="">대학생활</a></li>
+                            <li><a href="">기관안내</a></li>
+                            <li><a href="">정보광장</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrap">
+                <div class="main-1">
+                    <div class="m1-box">
+                        <div class="m1-box-tt">
+                            <h2>교양/전공 교육혁신을 통한</h2>
+                            <h1>창조적 인재 양성!</h1>
+                        </div>
+
+                        <div class="border-1px">
+                        </div>
+
+                        <div class="m1-box-ct">
+                            <ul>
+                                <li><span>-"창업과 기업가 정신"강의를 통한 창업교육</span></li>
+                                <li><span>-신입생 예비대학 컴퓨터언어 교육 미래창조과학부 모범사례 선정</span></li>
+                                <li><span>-인문학과 과학을 융합한 블랜디드 러닝 최초 도입</span></li>
+                                <li><span>-원어민과 함께하는 글로벌 잉글리쉬 회화 교육</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="m1-bar">
+                        <ul>
+                            <li><button><span>세종뉴스</span></button></li>
+                            <li><button><span>언론 속 세종</span></button></li>
+                            <li><button><span>보도자료</span></button></li>
+                            <li><button><span>세종웹진</span></button></li>
+                        </ul>
+                        <div class="more-btn">
+                            <a href=""><img id="mbtn-img" src="img/more_btn.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="main-2">
+                    <div class="m2-container">
+                        <ul>
+                            <li><div class="news">
+                                <div class="news-img">
+                                    <a href=""><img src="img/coverstory.jpg"></a>
+                                </div>
+                                <div class="news-con">
+                                    <div class="news-category">
+                                        <span>[커버스토리]</span>
+                                    </div>
+                                    <div class="news-title">
+                                        <span>NOW세종인#59한국경제TV 방송기자...</span>
+                                    </div>
+                                    <div class="news-text">
+                                        <span>문형민(국어국문학과*13)동문은 한국경제TV 보도본부 성장기업부 제약바이오팀 소속...</span>
+                                    </div>
+                                </div>
+                            </div></li>
+                            <li><div class="news">
+                                <div class="news-img">
+                                    <a href=""><img src="img/people.jpg"></a>
+
+                                </div>
+                                <div class="news-con">
+                                    <div class="news-category">
+                                        <span>[세종피플]</span>
+                                    </div>
+                                    <div class="news-title">
+                                        <span>건축공학전공 성민기 교수,음악격리병...</span>
+                                    </div>
+                                    <div class="news-text">
+                                        <span>건축공학전공 성민기 교수는 지난 20년 11월 율곡관 712호에 실물 크기의 실험용...</span>
+                                    </div>
+                                </div>
+                            </div></li>
+                            <li><div class="news">
+                                <div class="news-img">
+                                    <a href=""><img src="img/dansin.JPG"></a>
+
+                                </div>
+                                <div class="news-con">
+                                    <div class="news-category">
+                                        <span>[주요단신]</span>
+
+                                    </div>
+                                    <div class="news-title">
+                                        <span>배덕효 총장,스테이 스트롱 캠페인 동참</span>
+                                    </div>
+                                    <div class="news-text">
+                                        <span>배덕효 총장이 2021년 코로나19 극복과 조기종식을 기원하는 스테이스트롱(Stay Strong)...</span>
+                                    </div>
+                                </div>
+                            </div></li>
+                            <li><div class="news">
+                                <div class="news-img">
+                                    <a href=""><img src="img/student.jpg"></a>
+                                </div>
+                                <div class="news-con">
+                                    <div class="news-category">
+                                        <span>[학생]</span>
+                                    </div>
+                                    <div class="news-title">
+                                        <span>패션디자인학과 학생들, 한국패션일러...</span>
+                                    </div>
+                                    <div class="news-text">
+                                        <span>패션디자인학과 학생들이 한국패션일러스트와 MCM 공모전에서 대거 수상했다.</span>
+                                    </div>
+                                </div>
+                            </div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-3">
+
+                </div>
+        </main>
+        <footer>
+            <div class="f-1">
+                <div class="footer-1">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">규정/예결산공고</a></li></li>
+                        <li><a href="">대학정보공시</a></li>
+                        <li><a href="">홈페이지오류신고</a>
+                        <li><a href="">교내전화번호</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-2">
+                <div class="footer-address">
+                    <span class="address">
+                        05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+                    </span>
+                    <span class="TEL">
+                        TEL 02-3408-3114
+                    </span>
+                    <span class="E-MAIL">
+                        webmaster@sejong.ac.kr
+                    </span>
+                    <br><span class="COPY">COPYRIGHT 2012 SEJONG UNIVERSITY. ALL RIGHTS RESVERED.</span>
+                </div>
+                <div class="footer-search">
+                    <select>
+                        <option>관련사이트 바로가기</option>
+                        <option>박물관</option>
+                        <option>학군단</option>
+                        <option>학생생활 상담소</option>
+                        <option>세종사이버대학교</option>
+                        <option>세종초등학교</option>
+                        <option>세종포털</option>
+                    </select>
+                    <input type="submit" value="이동" id="footer-submit">
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
